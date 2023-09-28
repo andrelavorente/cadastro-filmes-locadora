@@ -25,7 +25,7 @@ app.use(express.urlencoded({extended: false}))
 
 app.use(express.static('./publico'))
 
-app.use('./login', rotaLogin)
+app.use('/login', rotaLogin)
 app.use(autenticar, express.static('./protegido'))
 
 
