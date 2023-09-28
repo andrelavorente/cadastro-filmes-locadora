@@ -1,0 +1,41 @@
+.container2 {
+    background-color: rgba(0, 0, 0, 0.9);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 100px;
+    border-radius: 15px;
+    color: #fff;
+  }
+  
+  input {
+    padding: 15px;
+    border: none;
+    outline: none;
+    font-size: 15px;
+  }
+  .btn btn-primary {
+    background-color: #5a0404;
+    border: none;
+    padding: 100px;
+    width: 100%;
+    border-radius: 10px;
+    color: white;
+    font-size: 15px;
+    align-items: center;
+  }
+  
+  .btn btn-secundary {
+    background-color: #5a0404;
+    border: none;
+    padding: 100px;
+    width: 100%;
+    border-radius: 10px;
+    color: white;
+    font-size: 15px;
+  }
+  button:hover {
+    background-color: #7e0303;
+    cursor: pointer;
+  }

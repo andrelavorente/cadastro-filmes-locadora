@@ -1,0 +1,73 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  .container {
+    width: 1000px !important;
+  }
+  p {
+    font-size: 12px;
+  }
+  h1 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif !important;
+  }
+  h2 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif !important;
+    color: #ffffff;
+  }
+  
+  .fundo {
+    background-color: #383737;
+  }
+  
+  .bg-primary {
+    background-color: #5a0404 !important;
+    font-family: Verdana, Geneva, Tahoma, sans-serif !important;
+  }
+  .form-control {
+    height: 36px;
+    background: #fff;
+    color: #fff;
+    font-size: 14px;
+    border-radius: 2px;
+    box-shadow: none !important;
+    border: 1px solid #f5f4f4;
+  }
+  .contactForm .form-control {
+    border: none;
+    border-bottom: 1px solid #f5f4f4;
+    padding: 0;
+  }
+  
+  .form-control:focus,
+  .form-control:active {
+    border-color: #5a0404 !important;
+  }
+  .form-label {
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+  }
+  .btn.btn-primary {
+    background: #5a0404 !important;
+    border-color: #5a0404 !important;
+    color: #fff;
+    width: 100px;
+    border-radius: 0 !important;
+  }
+  .btn.btn-primary:hover {
+    background-color: #7e0303 !important;
+  }
+  
+  .bi {
+    font-size: 50px;
+  }
+  @media only screen and (max-width: 600px) {
+    .container {
+      width: 100% !important;
+      padding-bottom: 207px !important;
+    }
+  }
