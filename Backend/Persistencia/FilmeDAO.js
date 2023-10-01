@@ -10,8 +10,8 @@ export default class FilmeDAO {
       const parametros = [
         filme.nomeFilme,
         filme.ano,
-        filme.categoria,
         filme.id,
+        filme.categoria,
         filme.palavra,
       ];
       await conexao.execute(sql, parametros);
