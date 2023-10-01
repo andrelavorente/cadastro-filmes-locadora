@@ -2,13 +2,14 @@ import express from "express";
 import autenticar from "./seguranca/Autenticacao.js";
 import session from "express-session";
 import rotaLogin from "./rotas/rotaLogin.js";
-import Filme from "./Backend/Modelo/Filme.js";
-
+import rotaFilme from "./Backend/Rotas/rotaFilme.js";
 //IP com todas as interfaces disponíveis
 const host = "0.0.0.0";
 const porta = 3202;
 
 const app = express();
+
+app.use(express.json());
 
 app.use(
   session({
@@ -25,12 +26,7 @@ app.use(express.urlencoded({ extended: false }));
 
 app.use(express.static("./publico"));
 
-app.use("/filmes", (req, res) => {
-  const filme = new Filme(req.body);
-  filme.consultar("").then((listaFilmes) => {
-    res.json(listaFilmes);
-  });
-});
+app.use("/filmes", rotaFilme);
 
 app.use("/login", rotaLogin);
 app.use(autenticar, express.static("./protegido"));
