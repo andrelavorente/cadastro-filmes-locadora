@@ -7,10 +7,10 @@ export default class Filme {
   #id;
   #palavra;
   constructor(nomeFilme, ano, categoria, id, palavra) {
+    this.#id = id;
     this.#nomeFilme = nomeFilme;
     this.#ano = ano;
     this.#categoria = categoria;
-    this.#id = id;
     this.#palavra = palavra;
   }
 
