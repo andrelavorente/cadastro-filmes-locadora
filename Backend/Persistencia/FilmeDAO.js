@@ -15,7 +15,7 @@ export default class FilmeDAO {
         filme.palavra,
       ];
       await conexao.execute(sql, parametros);
-      global.poolConexoes = releaseConnection(conexao);
+      global.poolConexoes.releaseConnection(conexao);
     }
   }
 
