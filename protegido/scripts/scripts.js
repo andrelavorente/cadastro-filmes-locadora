@@ -1,7 +1,22 @@
 window.onload = () => {
-  mostrarFilmes([]);
+  obterFilmes();
 };
 
+function obterFilmes() {
+  fetch("https://129.146.68.51/aluno2-ppiadsead/filmes", {
+    method: "GET",
+  })
+    .then((res) => {
+      if (res.status === 200) {
+        return res.json();
+      } else {
+        return [];
+      }
+    })
+    .then((listaFilmes) => {
+      mostrarFilmes(listaFilmes);
+    });
+}
 function mostrarFilmes(listaFilmes) {
   const elementoDivTabela = document.getElementById("espacoTabela");
   if (listaFilmes.length > 0) {
